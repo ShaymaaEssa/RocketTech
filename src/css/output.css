@@ -187,9 +187,6 @@
   }
 }
 @layer utilities {
-  .invisible {
-    visibility: hidden;
-  }
   .sr-only {
     position: absolute;
     width: 1px;
@@ -273,9 +270,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -306,20 +300,8 @@
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -381,139 +363,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .dark {
-    & .apexcharts-canvas .apexcharts-tooltip {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-      border-color: transparent !important;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
-      background-color: var(--color-gray-600) !important;
-      border-color: var(--color-gray-500) !important;
-      color: var(--color-gray-500) !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip {
-      color: var(--color-gray-400) !important;
-      background-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
-      color: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip:after {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-canvas .apexcharts-xaxistooltip:before {
-      border-bottom-color: var(--color-gray-700) !important;
-    }
-    & .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active {
-      background-color: var(--color-gray-700) !important;
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-canvas .apexcharts-legend-text {
-      color: var(--color-gray-400) !important;
-    }
-    & .apexcharts-canvas .apexcharts-legend-text:not(.apexcharts-inactive-legend):hover {
-      color: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
-      fill: white !important;
-    }
-    & .apexcharts-canvas .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-label {
-      fill: var(--color-gray-400) !important;
-    }
-    & .apexcharts-gridline {
-      stroke: var(--color-gray-700) !important;
-    }
-    & .apexcharts-xcrosshairs {
-      stroke: var(--color-gray-700) !important;
-    }
-    & .apexcharts-ycrosshairs {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .dark {
-    & .datatable-wrapper .datatable-search .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-input {
-      color: white;
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper thead th .datatable-input {
-      background-color: var(--color-gray-700);
-      border-color: var(--color-gray-600);
-      color: white;
-    }
-    & .datatable-wrapper .datatable-top .datatable-dropdown {
-      color: var(--color-gray-400);
-    }
-    & .datatable-wrapper .datatable-top .datatable-dropdown .datatable-selector {
-      background-color: var(--color-gray-800);
-      border: 1px solid var(--color-gray-700);
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table {
-      color: var(--color-gray-400);
-    }
-    & .datatable-wrapper .datatable-table thead {
-      color: var(--color-gray-400);
-      background-color: var(--color-gray-800);
-    }
-    & .datatable-wrapper .datatable-table thead th .datatable-sorter:hover {
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table thead th.datatable-ascending .datatable-sorter {
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table thead th.datatable-descending .datatable-sorter {
-      color: white;
-    }
-    & .datatable-wrapper .datatable-table tbody tr.selected {
-      background-color: var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-table tbody tr {
-      border-bottom: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-info {
-      color: var(--color-gray-400);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link {
-      color: var(--color-gray-400);
-      border-color: var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link {
-      color: transparent;
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m14 8-4 4 4 4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='%239CA3AF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:last-of-type .datatable-pagination-list-item-link:hover::after {
-      content: url("data:image/svg+xml,%3csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 24 24'%3e %3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m10 16 4-4-4-4'/%3e %3c/svg%3e");
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
-      border-left: 1px solid var(--color-gray-700);
-    }
-    & .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link:hover {
-      background-color: var(--color-gray-700);
-      color: white;
-    }
-  }
   .border-gray-100 {
     border-color: var(--color-gray-100);
   }
@@ -553,19 +402,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .dark {
-    & .selectedCell {
-      background-color: var(--color-gray-700);
-    }
-  }
   .bg-\[url\(\'\.\.\/images\/2\.jpg\'\)\] {
     background-image: url('../images/2.jpg');
   }
   .bg-\[url\(\'\.\.\/images\/3\.jpg\'\)\] {
     background-image: url('../images/3.jpg');
-  }
-  .bg-\[url\(\'\/src\/1\.jpg\'\)\] {
-    background-image: url('/src/1.jpg');
   }
   .bg-\[url\(\'\/src\/images\/1\.jpg\'\)\] {
     background-image: url('/src/images/1.jpg');
@@ -727,15 +568,8 @@
   .capitalize {
     text-transform: capitalize;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-80 {
     opacity: 80%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -7566,31 +7400,6 @@
     border-color: var(--color-blue-600);
   }
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
-}
 @property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
@@ -7608,11 +7417,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
