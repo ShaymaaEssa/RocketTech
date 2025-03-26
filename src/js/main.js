@@ -1,6 +1,7 @@
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import 'flowbite';
+import '@fortawesome/fontawesome-free';
 
 //owl carousel config
 $(document).ready(function () {
