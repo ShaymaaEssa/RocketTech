@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
-@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+/* @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'; */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
@@ -12,6 +13,10 @@
     font-style: normal;
   } */
 
+  :root {
+    --fa-font-path: "/webfonts"; /* Adjust path if needed */
+  }
+  
   @font-face {
     font-family: 'FontAwesome';
     src: url('/fonts/fa-solid-900.woff2') format('woff2'),
