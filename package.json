@@ -7,8 +7,9 @@
     "tailwindcss": "^4.0.15"
   },
 "scripts": {
+  "dev": "vite",
   "tailwindWatch": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css -w",
-  "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css -m "
+  "build": "vite build && npx tailwindcss -i ./src/css/input.css -o ./dist/output.css -m"
 },
   "devDependencies": {
     "vite": "^6.2.3"
