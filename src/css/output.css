@@ -2254,6 +2254,9 @@
   .text-\[26px\] {
     font-size: 26px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-\[36px\] {
     font-size: 36px;
   }
@@ -2301,6 +2304,10 @@
   .leading-\[31px\] {
     --tw-leading: 31px;
     line-height: 31px;
+  }
+  .leading-\[36px\] {
+    --tw-leading: 36px;
+    line-height: 36px;
   }
   .leading-\[45px\] {
     --tw-leading: 45px;
@@ -2671,6 +2678,17 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .sm\:text-\[60px\] {
+    @media (width >= 40rem) {
+      font-size: 60px;
+    }
+  }
+  .sm\:leading-\[72px\] {
+    @media (width >= 40rem) {
+      --tw-leading: 72px;
+      line-height: 72px;
     }
   }
   .md\:order-1 {
